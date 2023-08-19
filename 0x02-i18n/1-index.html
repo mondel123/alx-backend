@@ -1,0 +1,23 @@
+#!/usr/bin/evn python3
+"""
+A Basic flask application
+"""
+from flask import Flask
+from flask import request
+from flask import render_template
+from flask_babel import Babel
+
+
+class Config(object):
+"""
+Application configure class
+"""
+LANGUAGES = ['en', 'fr']
+BABEL_DEFULT_LOCALE ='en'
+BABEL_DEFAULT_TIMEZONE = 'UTC'
+
+
+# Instantiate the application object
+app = Flask(_name_)
+app.config.from_object(config)
+ 
